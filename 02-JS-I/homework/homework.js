@@ -4,19 +4,19 @@
 const nuevaString = "Hola";
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = "4";
+const nuevoNum = 4;
 
 // Crea una variable booleana:
-const nuevoBool = "false";
+const nuevoBool = true;
 
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - "5" === 5;
+const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * "4" === 40 ;
+const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === "1";
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -63,7 +63,7 @@ function sonIguales(x, y) {
     if (x === y) {
      return true;
     } else {
-      return false;
+     return false;
     }
 }
 
@@ -71,7 +71,12 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  return str1.length === str2.length
+  if (str1.length === str2.length) {
+    return true;
+   } else {
+    return false;
+   }
+
 }
 
 function menosQueNoventa(num) {
@@ -198,7 +203,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return 'Hola' + nombre + '!';
+  return 'Hola' + ' ' + nombre + '!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
